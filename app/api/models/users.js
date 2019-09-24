@@ -13,7 +13,7 @@ const UserSchema = new Schema({
     trim: true,
     required: true
   },
-  password: {
+  user: {
     type: String,
     trim: true,
     required: true
@@ -24,4 +24,5 @@ UserSchema.pre('save', function (next) {
   this.password = bcrypt.hashSync(this.password, bcrypt.genSaltSync(10));
   next();
 });
+
 module.exports = mongoose.model('User', UserSchema);

@@ -1,6 +1,7 @@
 const express = require('express');
 const logger = require('morgan');
 const users = require('./routes/users');
+const todos = require('./routes/todos');
 const bodyParser = require('body-parser');
 const mongoose = require('./config/database'); //database configuration
 const jwt = require('jsonwebtoken');
@@ -15,6 +16,7 @@ app.get('/', function (req, res) {
 });
 // public route
 app.use('/users', users);
+app.use('/todos', todos);
 // private route
 
 function validateUser(req, res, next) {
