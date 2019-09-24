@@ -56,7 +56,11 @@ export default {
       this.loginMessage = ajax.data.message;
 
       if (ajax.data.status === "success") {
-        this.$store.dispatch("isLoggedIn", [true, ajax.data.data.token]);
+        this.$store.dispatch("isLoggedIn", [
+          true,
+          ajax.data.data.token,
+          ajax.data.data.user._id
+        ]);
       }
     },
     async register() {

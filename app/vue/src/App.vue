@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     logout() {
-      this.$store.dispatch("isLoggedIn", [false, ""]);
+      this.$store.dispatch("isLoggedIn", [false, "", ""]);
     }
   }
 };
