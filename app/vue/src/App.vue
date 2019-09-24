@@ -7,17 +7,21 @@
     <div v-if="this.$store.state.loggedIn !== true">
       <Login />
     </div>
-    <div v-else></div>
+    <div v-else>
+      <Tasks />
+    </div>
   </div>
 </template>
 
 <script>
 import Login from "./components/Login";
+import Tasks from "./components/Tasks";
 
 export default {
   name: "app",
   components: {
-    Login
+    Login,
+    Tasks
   },
   methods: {
     logout() {
