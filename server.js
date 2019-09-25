@@ -66,5 +66,5 @@ app.use(function (err, req, res, next) {
   else res.status(500).json({ message: "Internal server error." });
 });
 app.listen(process.env.PORT || 5000, function () {
-  console.log("Listening on port 3000");
+  console.log("Listening on port 5000");
 });
