@@ -11,6 +11,8 @@
 
 - Store the JWT tokens in session storage so there would be persistent log in status after a reload.
 
-- Styling, better class names, focus more on accessibility.
+- Styling, better class names, focus more on accessibility, responsiveness.
 
-- Make use of the other endpoint for updating the status of a task.  
+- Make use of the other endpoint for updating the status of a task.
+
+- Better error handling, covering more edge cases for user input.
