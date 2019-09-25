@@ -59,7 +59,8 @@ export default {
         this.$store.dispatch("isLoggedIn", [
           true,
           ajax.data.data.token,
-          ajax.data.data.user._id
+          ajax.data.data.user._id,
+          ajax.data.data.user.name
         ]);
       }
     },
@@ -98,6 +99,7 @@ label {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  background: white;
 }
 
 .flex {

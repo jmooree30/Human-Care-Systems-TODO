@@ -7,13 +7,15 @@ export const store = new Vuex.Store({
   state: {
     loggedIn: false,
     token: "",
-    id: ""
+    id: "",
+    name: ""
   },
   mutations: {
-    isLoggedIn(state, value, token) {
+    isLoggedIn(state, value) {
       state.loggedIn = value[0];
       state.token = value[1];
       state.id = value[2];
+      state.name = value[3];
     }
   },
   actions: {

@@ -36,6 +36,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background: #F0FFFF;
 }
 
 #app {
@@ -53,6 +54,7 @@ body {
   position: absolute;
   top: 0;
   border: 1px solid #ddd;
+  background: white;
 }
 
 .logout {
