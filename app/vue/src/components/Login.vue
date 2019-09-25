@@ -50,7 +50,7 @@ export default {
       const login = { email: this.email, password: this.password };
 
       const ajax = await axios.post(
-        "http://localhost:3000/users/authenticate",
+        "/users/authenticate",
         login
       );
       this.loginMessage = ajax.data.message;
@@ -71,7 +71,7 @@ export default {
         email: this.rEmail
       };
       const ajax = await axios.post(
-        "http://localhost:3000/users/register",
+        "/users/register",
         register
       );
       this.registerMessage = ajax.data.message;

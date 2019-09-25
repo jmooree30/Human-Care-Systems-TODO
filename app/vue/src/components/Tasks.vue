@@ -48,7 +48,7 @@ export default {
       };
 
       const ajax = await axios.post(
-        "http://localhost:3000/todos/create",
+        "/todos/create",
         task,
         config
       );
@@ -64,7 +64,7 @@ export default {
         headers: { "x-access-token": this.$store.state.token }
       };
       const ajax = await axios.post(
-        "http://localhost:3000/todos/list",
+        "/todos/list",
         user,
         config
       );
@@ -79,7 +79,7 @@ export default {
       };
 
       const ajax = await axios.post(
-        "http://localhost:3000/todos/delete",
+        "/todos/delete",
         taskId,
         config
       );
