@@ -68,7 +68,6 @@ export default {
         user,
         config
       );
-      console.log(ajax.data.data);
       if (ajax.data.data) this.tasks = ajax.data.data;
     },
     async remove(id) {
